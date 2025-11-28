@@ -5,16 +5,33 @@ This is where you make your design changes!
 Experiment with colors, typography, spacing, and component styles.
 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* ===============================================================
+  🤖 **COPILOT INSTRUCTIONS FOR custom.css** 🤖
+  ================================================================
+  
+  - **🚫 CRITICAL RULE: DO NOT EDIT `framework.css` or `dropdown-nav.css`.** - **✅ ALL new CSS styles, overrides, and design customizations go HERE in this file.**
+  
+  ---
+  
+  **KEY ASSETS:**
+  
+  1.  **Colors:** Use CSS Variables like `var(--primary-100)`, `var(--white)`, and `var(--grey)`.
+  2.  **Spacing:** Use CSS Variables like `var(--spacing8x3)` or `var(--spacing8x8)` for consistent measurements.
+  3.  **Layout:** Build upon the existing `grid` system classes (e.g., `.mobi1`, `.tab3`, `.desk4`).
+  
+  Always ask user for preferences instead of making assumptions!
+  
+*/
 
 /* ==========================================================================
    DESIGN SYSTEM - CUSTOMIZE YOUR COLORS & BRAND
    ========================================================================== */
 
 :root {
-  --primary-100: #3A4E6A;
-  --primary-80: #486284;
-  --primary-50: #9CB0C9;
-  --primary-25: #CED7E4;
+  --primary-100: #6A3A49;
+  --primary-80: #844857;
+  --primary-50: #6A3A4B;
+  --primary-25: #844857;
   --grey: #EBEFF4;
   --white: #fff;
   
