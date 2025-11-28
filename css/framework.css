@@ -110,10 +110,10 @@ table {
  :root {
 
   /* Color variables */
-  --primary-100: #3A4E6A;
-  --primary-80: #486284;
-  --primary-50: #9CB0C9;
-  --primary-25: #CED7E4;
+  --primary-100: #6A3A49;
+  --primary-80: #844857;
+  --primary-50: #6A3A4B;
+  --primary-25: #844857;
   --grey: #EBEFF4;
   --white: #fff;
 
