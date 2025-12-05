@@ -159,11 +159,44 @@ a.button {
   padding: 10px 20px 8px;
   display: inline-block;
   margin-top: var(--spacing8x2);
+  background: linear-gradient(135deg, #6A3A49 0%, #844857 100%);
+  color: var(--white);
+  transition: all 300ms ease;
+  box-shadow: 0 8px 20px rgba(106, 58, 73, 0.2);
   /* Try adding: background-color, box-shadow, transform on hover, etc. */
 }
 
 a.button:hover {
-  background: var(--dark)
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(106, 58, 73, 0.3);
+}
+
+.white-text-button {
+  color: var(--white) !important;
+  border: 2px solid var(--white) !important;
+}
+
+.game-type-card {
+  transition: all 300ms ease;
+  transform: perspective(1000px);
+  box-shadow: 0 10px 30px rgba(106, 58, 73, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.game-type-card:hover {
+  transform: perspective(1000px) rotateY(-8deg) rotateX(3deg) translateY(-10px);
+  box-shadow: 0 20px 50px rgba(106, 58, 73, 0.25);
+}
+
+.game-type-card img {
+  transition: all 300ms ease;
+  display: block;
+  width: 100%;
+}
+
+.game-type-card:hover img {
+  transform: scale(1.05);
 }
 
 /* Example: Secondary Button Style */
@@ -186,6 +219,10 @@ a.button-highlight {
 
 
 /* Header styles */
+header {
+  background: var(--white);
+}
+
 header img {
   width: 160px;
   /* Try adjusting: width, border-radius for logo styling */
@@ -201,6 +238,7 @@ header nav {
 
 header nav a {
   margin-left: 40px;
+  color: var(--primary-80);
   /* Try adding: text-transform, font-weight, padding for button-style nav */
 }
 
@@ -225,12 +263,19 @@ header nav a.active {
 #home-hero-image h1 {
   text-align: center;
   color: var(--white);
-  margin: 0; 
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 
 #home-hero-image p {
   color: var(--white);
-  margin: 0; 
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 800px;
 }
 
 #hero-image h1 {
@@ -260,7 +305,7 @@ header nav a.active {
 
 /* Light background wrapper - extends to viewport edges */
 .light-bg-wrapper {
-  background: var(--grey);
+  background: linear-gradient(135deg, #EBEFF4 0%, #f5f7fa 100%);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -271,7 +316,7 @@ header nav a.active {
 /* Callout */
 
 .callout {
-  background: var(--grey);
+  background: linear-gradient(135deg, #EBEFF4 0%, #f5f7fa 100%);
 }
 
 .callout div {
@@ -293,6 +338,21 @@ header nav a.active {
 
 /*  Content section */
 
+.card {
+  background: linear-gradient(135deg, rgba(106, 58, 73, 0.08) 0%, rgba(132, 72, 87, 0.08) 100%);
+  border-left: 5px solid #6A3A49;
+  padding: 25px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+  box-shadow: 0 10px 30px rgba(106, 58, 73, 0.15), 0 5px 15px rgba(106, 58, 73, 0.1);
+  transform: perspective(1000px) rotateX(0deg);
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateX(5deg) translateY(-8px);
+  box-shadow: 0 20px 40px rgba(106, 58, 73, 0.25), 0 10px 25px rgba(106, 58, 73, 0.15);
+}
+
 section p + a.button {
   margin-top: var(--spacing8x12);
 }
@@ -301,7 +361,7 @@ section p + a.button {
 /* Footer Styles */
 footer {
   width: 100%;
-  background: var(--primary-100);
+  background: linear-gradient(135deg, #6A3A49 0%, #844857 100%);
   color: var(--white);
   padding: 40px 20px 20px;
   /* Try customizing: background gradients, text alignment, etc. */
@@ -356,7 +416,7 @@ footer nav, footer p {
    ========================================================================== */
 
 .dark-bg-wrapper {
-  background: var(--white);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
 }
 
 .dark-bg-wrapper h2,
@@ -402,13 +462,30 @@ hr {
 }
 
 /* Icon with Text Component */
+.icon-with-text {
+  transition: all 300ms ease;
+  transform: perspective(1000px);
+}
+
+.icon-with-text:hover {
+  transform: perspective(1000px) rotateY(5deg) rotateX(-2deg);
+}
+
 .icon-with-text i {
   background: var(--grey);
   padding: 17px 16px 23px;
   border-radius: 200px;
   font-size: 30px;
   color: var(--primary-80);
+  transition: all 300ms ease;
+  box-shadow: 0 8px 20px rgba(106, 58, 73, 0.15);
+  display: inline-block;
   /* Try customizing: colors, sizing, border-radius, box-shadow */
+}
+
+.icon-with-text:hover i {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 12px 30px rgba(106, 58, 73, 0.25);
 }
 
 
