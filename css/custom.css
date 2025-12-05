@@ -5,6 +5,13 @@ This is where you make your design changes!
 Experiment with colors, typography, spacing, and component styles.
 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* Import Alfa Slab One font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Import Adamina font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
 /* ===============================================================
   🤖 **COPILOT INSTRUCTIONS FOR custom.css** 🤖
   ================================================================
@@ -48,19 +55,24 @@ Experiment with colors, typography, spacing, and component styles.
 
 body {
   color: var(--primary-80);
-  /* font-family is set in framework.css but you can override it here if needed */
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Heading Styles - Customize sizes, colors, spacing */
 h1, h2, h3, h4, h5, h6 { 
   line-height: 1.1;
-  color: var(--primary-80);
-  /* Add your custom heading styles here */
+  color: var(--black);
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 { 
   font-size: 90px;
   /* Try adding: font-weight, color, text-transform, etc. */
+  text-transform: uppercase;
 }
 
 h2 { 
@@ -83,6 +95,9 @@ h5 {
 
 h6 { 
   font-size: 18px;
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Paragraph Styles */
@@ -90,6 +105,9 @@ p {
   font-size: 18px;
   line-height: 1.5;
   color: var(--primary-80);
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
   /* Try adjusting: line-height, letter-spacing, margin-bottom */
 }
 
@@ -123,6 +141,9 @@ a {
   text-decoration: none;
   color: var(--primary-80);
   transition: all 300ms;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
   /* Try adding: border-bottom, font-weight changes, etc. */
 }
 
@@ -173,6 +194,9 @@ header img {
 header nav {
   text-align: right;
   font-size: 15px;
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header nav a {
@@ -285,10 +309,16 @@ footer hr {
 footer a, footer p {
   color: var(--secondary-color);
   font-size: 12px;
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer nav a { 
   font-size: 14px;
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer nav a + a {
